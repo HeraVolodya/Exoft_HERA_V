@@ -1,0 +1,323 @@
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index_one.html
+        index_tree.html
+        index_two.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git add .
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index_one.html
+        new file:   index_tree.html
+        new file:   index_two.html
+
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git commit -m "add files"
+[main 2ea53a1] add files
+ 3 files changed, 36 insertions(+)
+ create mode 100644 index_one.html
+ create mode 100644 index_tree.html
+ create mode 100644 index_two.html
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 563 bytes | 563.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/HeraVolodya/Exoft_HERA_V.git
+   910a40a..2ea53a1  main -> main
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ 
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch 
+* main
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch brn_one
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch brn_two
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch
+* brn_one
+  brn_two
+  main
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch brn_one
+Your branch is up to date with 'origin/brn_one'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index_one.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git add .
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch brn_one
+Your branch is up to date with 'origin/brn_one'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index_one.html
+
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git commit -m "changes index_one.txt"
+[brn_one 34c3940] changes index_one.txt
+ 1 file changed, 1 insertion(+)
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 320.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/HeraVolodya/Exoft_HERA_V.git
+   2ea53a1..34c3940  brn_one -> brn_one
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch
+  brn_one
+* brn_two
+  main
+  volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch
+  brn_one
+* brn_two
+  main
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch brn_two
+Your branch is up to date with 'origin/brn_two'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    README.md
+        deleted:    index_one.html
+        deleted:    index_tree.html
+        deleted:    index_two.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        README.md
+        index_one.html
+        index_two.html
+
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git add .
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch brn_two
+Your branch is up to date with 'origin/brn_two'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index_one.html
+        deleted:    index_tree.html
+        modified:   index_two.html
+
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git commit -m "made changes to the file index_one.html  and made ignore index_tree.html"
+[brn_two 08c8aca] made changes to the file index_one.html  and made ignore index_tree.html
+ 4 files changed, 3 insertions(+), 13 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 index_tree.html
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 522 bytes | 522.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/HeraVolodya/Exoft_HERA_V.git
+   2ea53a1..08c8aca  brn_two -> brn_two
+   volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch
+  brn_one
+* brn_two
+  main
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch brn_two
+Your branch is up to date with 'origin/brn_two'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    README.md
+        deleted:    index_one.html
+        deleted:    index_tree.html
+        deleted:    index_two.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        README.md
+        index_one.html
+        index_two.html
+
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git add .
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch brn_two
+Your branch is up to date with 'origin/brn_two'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index_one.html
+        deleted:    index_tree.html
+        modified:   index_two.html
+
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git commit -m "made changes to the file index_one.html  and made ignore index_tree.html"
+[brn_two 08c8aca] made changes to the file index_one.html  and made ignore index_tree.html
+ 4 files changed, 3 insertions(+), 13 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 index_tree.html
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 522 bytes | 522.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/HeraVolodya/Exoft_HERA_V.git
+   2ea53a1..08c8aca  brn_two -> brn_two
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch brn_two
+Your branch is up to date with 'origin/brn_two'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index_one.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git add .
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git commit -m "fixed the conflict that was on the branch"
+[brn_two 2fc46e3] fixed the conflict that was on the branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/HeraVolodya/Exoft_HERA_V.git
+   08c8aca..2fc46e3  brn_two -> brn_two
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ 
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch
+* brn_one
+  brn_two
+  main
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status 
+On branch brn_one
+Your branch is up to date with 'origin/brn_one'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index_one.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git add .
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch brn_one
+Your branch is up to date with 'origin/brn_one'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index_one.html
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git commit -m "fixed the conflict that was on the branch"
+[brn_one 6062af1] fixed the conflict that was on the branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/HeraVolodya/Exoft_HERA_V.git
+   34c3940..6062af1  brn_one -> brn_one
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch -D brn_one
+Deleted branch brn_one (was 476c6dc).
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch -D brn_two
+Deleted branch brn_two (was 2fc46e3).
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch 
+* main
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch development
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch 
+  development
+* main
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ 
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch -D brn_one
+Deleted branch brn_one (was 476c6dc).
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch -D brn_two
+Deleted branch brn_two (was 2fc46e3).
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch 
+* main
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch development
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git branch 
+  development
+* main
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch development
+nothing to commit, working tree clean
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git pull origin main
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.84 KiB | 1.84 MiB/s, done.
+From https://github.com/HeraVolodya/Exoft_HERA_V
+ * branch            main       -> FETCH_HEAD
+   2ea53a1..d0e08dd  main       -> origin/main
+Updating 2ea53a1..d0e08dd
+Fast-forward
+ .gitignore      |  1 +
+ index_one.html  |  1 +
+ index_tree.html | 12 ------------
+ index_two.html  |  2 +-
+ 4 files changed, 3 insertions(+), 13 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 index_tree.html
+ volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git status
+On branch development
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index_one.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git add .
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git commit -m "add element"
+[development bf27d2a] add element
+ 1 file changed, 1 insertion(+)
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git push
+fatal: The current branch development has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin development
+
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ git push --set-upstream origin development
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'development' on GitHub by visiting:
+remote:      https://github.com/HeraVolodya/Exoft_HERA_V/pull/new/development
+remote: 
+To https://github.com/HeraVolodya/Exoft_HERA_V.git
+ * [new branch]      development -> development
+Branch 'development' set up to track remote branch 'development' from 'origin'.
+volodimir@volodimir-T430s:~/Documents/my_repo/Exoft/Exoft_HERA_V$ 
+
